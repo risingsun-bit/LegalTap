@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link href="abtstyle.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="menu-activea">
+  <h1>INDEX</h1>
+  <ul>
+    <li><a href="file:///F:/STUDY!!!!!/6th%20sem/project/Front/front.html" style="text-decoration: none;">Home</a></li>
+    <li><a href="file:///F:/STUDY!!!!!/6th%20sem/project/about/aboutpage.html"style="text-decoration: none;">About Us</a></li>
+    <li><a href="file:///F:/STUDY!!!!!/6th%20sem/project/lawyer/lawyermain.html" style="text-decoration: none;">Our Lawyers</a></li>
+    <li><a href="file:///F:/STUDY!!!!!/6th%20sem/project/Testimonial/index.html" style="text-decoration: none;">Testimonial</a></li>
+    <li><a href="file:///F:/STUDY!!!!!/6th%20sem/project/contact%20form/index.html" style="text-decoration: none;">Contact Us</a></li>
+    <li><a href="https://localhost/legal/Admin/index.php" style="text-decoration:none;">LOGIN</a></li>
+  </ul> 
+</nav>
+<main>
+  <section>
+   <br><br><br>
+    <h1>About 
+      LEGALTAP.COM</h1>
+    <br>
+    <p>Need instant solution to your legal problem? You can do it with LegalTap free legal advice service. You can post your query related to any legal matter online and get it answered instantly by top advocates in India for free. 
+The internet is not a lawyer and neither are you. Googling your legal queries might not be a viable solution for your case. With LegalTap's free legal advice service you can talk to a real lawyer about your legal issue for free and get a practical solution instantly.
+</p>
+<p>We recommend a powerful online booking system for your firm. Your online booking system should allow your potential clients to choose the day and time that is right for them (and that works for you too, of course) and also, optionally, choose which attorney in your practice they are booking time to meet with.<br>
+Why choose us? <br>
+1) 100% Confidentiality<br>
+2) Verified Lawyers - 
+<br>   Verified lawyers at your fingertips with detailed profiles & user reviews.<br>
+3) Contact Immediately-
+<br>Contact lawyers with confidence, support & assistance from your dedicated case manager.
+</p>
+     
+  </section>
+</main>
+<script>
+    (function() {
+
+  var nav = $('nav'),
+    menu = $('nav h1'),
+    main = $('main'),
+  	open = false,
+  	hover = false;
+
+  menu.on('click', function() {
+		open = !open ? true : false;
+    nav.toggleClass('menu-active');
+    main.toggleClass('menu-active');
+    nav.removeClass('menu-hover');
+    main.removeClass('menu-hover');
+    console.log(open);
+  });
+  menu.hover( 
+    function() {
+      if (!open) {
+      	nav.addClass('menu-hover');
+      	main.addClass('menu-hover');
+      }
+    }, function() {
+      nav.removeClass('menu-hover');
+      main.removeClass('menu-hover');
+    }
+  );
+
+})();
+    
+</script>
+</body>
+</html>
